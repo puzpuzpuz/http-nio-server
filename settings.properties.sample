@@ -1,0 +1,4 @@
+port=8080
+www_root=/home
+session_timeout_secs=30
+max_connections=10000
