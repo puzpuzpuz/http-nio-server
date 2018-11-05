@@ -14,6 +14,7 @@ public final class OptimisticLock {
     public void lock() {
         while (!tryLock()) {
             // keep the loop
+            // TODO consider using Thread.yield() here to avoid core starvation
         }
     }
 
